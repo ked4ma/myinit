@@ -1,0 +1,8 @@
+$ sudo apt-get install -y \
+    vim \
+    fuse libfuse2 \ ## for installing jetbrains-toolbox
+    git git-gui \
+    fcitx-mozc \ ## japanese input
+    zsh fzf
+
+# use prezto for zsh

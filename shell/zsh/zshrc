@@ -1,0 +1,28 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+
+# prompt
+autoload -Uz vcs_info
+setopt prompt_subst
+precmd() { vcs_info }
+PROMPT="%n@%m:%B%F{manenta}%~%f%F{cyan}\${vcs_info_msg_0_}%f%b
+%F{magenta}>>%f "
+
+# incremental history search
+function select-history() {
+  BUFFER=$(history -n -r 1 | fzf --no-sort +m --query "$LBUFFER" --prompt="History > ")
+  CURSOR=$#BUFFER
+}
+zle -N select-history
+bindkey '^r' select-history
