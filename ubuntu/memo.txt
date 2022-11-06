@@ -1,5 +1,5 @@
 $ sudo apt-get install -y \
-    vim \
+    neovim \
     fuse libfuse2 \ ## for installing jetbrains-toolbox
     git git-gui \
     fcitx-mozc \ ## japanese input

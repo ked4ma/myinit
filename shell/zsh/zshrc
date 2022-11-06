@@ -46,4 +46,5 @@ bindkey '^r' select-history
 
 # alias
 alias gitk='/usr/bin/gitk --all &'
-alias vi='/usr/bin/vim'
+alias vim='/usr/bin/nvim'
+alias vi='/usr/bin/nvim'
