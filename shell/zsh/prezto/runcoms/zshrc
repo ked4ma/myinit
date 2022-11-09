@@ -33,7 +33,7 @@ precmd() {
   vcs_info
   theme_precmd
 }
-PROMPT="%n@%m:%B%F{manenta}%~%f%F{cyan}\${vcs_info_msg_0_}%f%b
+PROMPT="%n@%m:%B%F{magenta}%~%f%F{cyan}\${vcs_info_msg_0_}%f%b
 %F{magenta}>>%f "
 
 # incremental history search
