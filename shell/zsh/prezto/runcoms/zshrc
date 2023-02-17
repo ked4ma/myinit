@@ -22,7 +22,7 @@ zstyle ':vcs_info:svn:*' branchformat '%b'
 zstyle ':vcs_info:svn:*' formats ' [%b%F{1}:%F{11}%i%c%u%B%F{cyan}]'
 zstyle ':vcs_info:*' enable git svn
 theme_precmd () {
-  if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
+  if [[ -z $(git ls-files $(git rev-parse --show-toplevel 2> /dev/null) --other --exclude-standard 2> /dev/null) ]]; then
     zstyle ':vcs_info:git:*' formats ' %F{cyan}[%b %c%u%B%F{cyan}]'
   else
     zstyle ':vcs_info:git:*' formats ' %F{cyan}[%b %c%u%B%F{red}o%F{cyan}]'
