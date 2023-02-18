@@ -1,0 +1,20 @@
+# install brew
+https://brew.sh/
+
+brew install nvim \
+             gui git-gui \
+             fzf
+
+cp -r ~/git/myinit/nvim ~/.config
+
+# reflect profile of iterm
+## import profile.json
+
+# setup zsh (prezto)
+https://github.com/sorin-ionescu/prezto
+## and then
+cp ~/git/myinit/shell/zsh/prezto/runcoms/* ~/.zprezto/runcoms/
+## [Caution] for now, need to replace "/usr/bin/" to "/usr/local/bin"
+
+# docker
+https://www.docker.com/
