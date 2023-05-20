@@ -10,3 +10,16 @@ $ sudo apt-get install -y \
 
 # install nvm
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+
+# set nvim settings
+cp -r ../nvim ~/.config
+
+# write following to ~/.vimrc
+```
+let _curfile=expand("%:r")
+if _curfile == 'Makefile'
+  set noexpandtab
+endif
+```
+
+# TODO: verify init.lua

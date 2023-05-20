@@ -12,7 +12,7 @@ set copyindent    "copy the previous line structure when starting new line
 set tabstop=4     "number of visual spaces per TAB
 set softtabstop=2 "number of spaces in tab when editing
 set shiftwidth=2  "number of spaces to use for autoindent
-set noexpandtab   "not to expand TAB to spaces
+set expandtab   "not to expand TAB to spaces
 
 "[[clipboard]]
 set clipboard=unnamed,unnamedplus
