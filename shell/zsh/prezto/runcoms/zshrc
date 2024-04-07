@@ -53,3 +53,24 @@ alias vi='/usr/bin/nvim'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# # alias
+# alias gitk='/usr/bin/gitk --all &'
+# # alias vim='/usr/local/bin/nvim.appimage'
+# alias vi='vim'
+# 
+# # nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# 
+# # go lang
+# export PATH=$PATH:/home/ked4ma/.go/bin
+# export GOPATH=/home/ked4ma/go
+# export PATH=$PATH:/home/ked4ma/go/bin
+# 
+# alias android-studio='/home/ked4ma/.local/share/JetBrains/Toolbox/scripts/studio &'
+# alias adb='~/Android/Sdk/platform-tools/adb'
+# 
+# # direnv
+# eval "$(direnv hook zsh)"
