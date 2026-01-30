@@ -1,3 +1,4 @@
+-- filer (sidenavi)
 return {
   'lambdalisue/fern.vim',
   keys = {

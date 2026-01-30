@@ -4,7 +4,7 @@ vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
 
 -- enable mouse operations
-vim.opt.mouse = 'a' 
+vim.opt.mouse = 'a'
 
 -- line number
 vim.opt.number = true
@@ -26,3 +26,10 @@ vim.opt.clipboard = 'unnamed,unnamedplus'
 
 -- cursor
 vim.opt.cursorline = true
+
+-- diagnostic
+vim.diagnostic.config {
+  -- show warnings as virstual text
+  virtual_text = true,
+  -- virtual_lines = true,
+}
