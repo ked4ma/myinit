@@ -2,8 +2,12 @@
 https://brew.sh/
 
 brew install nvim \
-             gui git-gui \
-             fzf
+             git \
+             git-gui \
+             fzf \
+             ripgrep
+
+brew install --cask font-hack-nerd-font
 
 cp -r ~/git/myinit/nvim ~/.config
 
