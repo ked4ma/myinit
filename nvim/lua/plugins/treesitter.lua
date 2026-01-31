@@ -1,4 +1,4 @@
--- lighlighting
+-- syntax parser
 return {
   'nvim-treesitter/nvim-treesitter',
   event = 'VeryLazy',

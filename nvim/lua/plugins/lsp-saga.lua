@@ -1,3 +1,4 @@
+-- enable to ref func def and jump (+ others)
 return {
   'nvimdev/lspsaga.nvim',
   dependencies = {
@@ -5,8 +6,13 @@ return {
     'nvim-tree/nvim-web-devicons',     -- optional
   },
   event = 'VeryLazy',
-  config = function()
-    require('lspsaga').setup()
+  opts = {
+    symbol_in_winbar = { enable = false },
+    lightbulb = { enable = false },
+    code_action_lightbulb = { enable = true },
+  },
+  config = function(_, opts)
+    require('lspsaga').setup(opts)
     vim.keymap.set("n", "<C-m>", "<cmd>Lspsaga peek_definition<CR>")
     vim.keymap.set("n", "<C-S-m>", "<cmd>Lspsaga goto_definition<CR>")
   end,

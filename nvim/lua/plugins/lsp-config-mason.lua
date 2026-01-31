@@ -1,3 +1,4 @@
+-- lsp manager
 return {
   "mason-org/mason-lspconfig.nvim",
   event = 'VeryLazy',

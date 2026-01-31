@@ -1,3 +1,5 @@
+-- file explorer (include fuzzy search)
+
 -- external deps
 --   - BurntSushi/ripgrep
 return {
