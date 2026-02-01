@@ -13,7 +13,7 @@ return {
   },
   config = function(_, opts)
     require('lspsaga').setup(opts)
-    vim.keymap.set("n", "<C-m>", "<cmd>Lspsaga peek_definition<CR>")
-    vim.keymap.set("n", "<C-S-m>", "<cmd>Lspsaga goto_definition<CR>")
+    vim.keymap.set("n", "<C-b>", "<cmd>Lspsaga peek_definition<CR>")
+    vim.keymap.set("n", "<C-S-b>", "<cmd>Lspsaga goto_definition<CR>")
   end,
 }

@@ -3,7 +3,7 @@ return {
   'lambdalisue/fern.vim',
   keys = {
     {
-      '<C-b>',
+      '<C-p>',
       function()
         local fern_win_id = nil
 
