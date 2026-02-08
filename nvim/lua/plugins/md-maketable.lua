@@ -1,4 +1,4 @@
 return {
   'mattn/vim-maketable',
-  lazy = false,
+  cmd = { 'MakeTable', 'UnmakeTable' },
 }
