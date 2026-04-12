@@ -12,3 +12,13 @@ window-padding-balance = true
 copy-on-select = true
 clipboard-read = allow
 clipboard-write = allow
+
+cursor-style = block
+cursor-style-blink = false
+
+keybind = cmd+shift+right=next_tab
+keybind = cmd+shift+left=previous_tab
+
+macos-titlebar-style = tabs
+macos-option-as-alt = true
+macos-icon = xray
