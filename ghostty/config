@@ -24,3 +24,5 @@ keybind = cmd+shift+left=previous_tab
 macos-titlebar-style = tabs
 macos-option-as-alt = true
 macos-icon = xray
+
+shell-integration-features = no-cursor
