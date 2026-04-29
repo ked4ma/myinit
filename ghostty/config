@@ -20,6 +20,8 @@ cursor-style-blink = false
 
 keybind = cmd+shift+right=next_tab
 keybind = cmd+shift+left=previous_tab
+# enable to paste to search box
+keybind = super+v=paste_from_clipboard
 
 macos-titlebar-style = tabs
 macos-option-as-alt = true
@@ -27,4 +29,3 @@ macos-icon = xray
 
 shell-integration-features = no-cursor
 
-keybind = super+v=paste_from_clipboard
